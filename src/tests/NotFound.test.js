@@ -13,6 +13,6 @@ describe('Será avaliado se o arquivo teste NotFound.test.js contempla 100% dos 
   test('Existe uma imagem com o src https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif', () => {
     render(<NotFound />);
     const imgNotFound = screen.getByAltText('Pikachu crying because the page requested was not found');
-    expect(imgNotFound.src).toContain('https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
+    expect(imgNotFound.src).toBe('https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
   });
 });
